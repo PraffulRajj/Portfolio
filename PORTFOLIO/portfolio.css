@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgb(25, 4, 43);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.left{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 78px;
+    background-color: rgb(31, 7, 51);
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+
+.FirstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+
+.FirstSection > div{
+    width: 30%;
+}
+
+
+.leftSection{
+    text-align: center;
+    font-size: 2rem;
+ 
+}
+
+.RightSection{
+   margin: 10px;
+}
+
+
+.RightSection img{
+    width: 60%;
+    clip-path: circle(47.8% at 50% 48%);
+    
+
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+}
+
+ul a:hover{
+    font-size: 1.1rem;
+    color: rgb(166, 166, 247);
+}
+
+.name{
+   justify-content: center;
+   color: rgb(158, 84, 228);
+   font-size: 4rem;
+   margin-top: 10px
+}
+
+.what{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.Home_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.DownloadCV{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: 0.75rem 1rem;
+    border-radius: 0.8rem;
+    font-weight: var(--font-medium);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.about{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: 0.75rem 1rem;
+    border-radius: 0.8rem;
+    font-weight: var(--font-medium);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.DownloadCV:hover{
+    background-color: rgb(158, 84, 228);
+}
+
+
+.about:hover{
+    background-color: rgb(158, 84, 228);
+}
+
+
+.contact{
+    display: inline-flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    width: 70%;
+    margin: 50px;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 0.8rem;
+    font-weight: bolder;
+}
+
+
+.contact:hover{
+    background-color: rgb(158, 84, 228);
+}
+
