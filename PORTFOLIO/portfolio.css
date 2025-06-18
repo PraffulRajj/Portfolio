@@ -154,8 +154,23 @@ ul a:hover{
     font-weight: bolder;
 }
 
+.github{
+    display: inline-flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    width: 70%;
+    padding: 10px;
+    border-radius: 0.8rem;
+    font-weight: bolder;
+}
 
 .contact:hover{
+    background-color: rgb(158, 84, 228);
+}
+
+.github:hover{
     background-color: rgb(158, 84, 228);
 }
 
