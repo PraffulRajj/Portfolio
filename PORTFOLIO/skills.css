@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(25, 4, 43);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header{
+    background-color: white;
+    color: black
+
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+.intro{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#skills:hover{
+    background-color: rgb(31, 7, 51);
+    color: white;
+}
