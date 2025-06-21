@@ -174,3 +174,31 @@ ul a:hover{
     background-color: rgb(158, 84, 228);
 }
 
+
+.Home_button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+
+a.LinkedIn{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: 0.75rem 1rem;
+    border-radius: 0.8rem;
+    font-weight: var(--font-medium);
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+}
+
+.LinkedIn:hover{
+    background-color: rgb(158, 84, 228);
+}
