@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prafful's Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logos/favicon_io (2)/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/favicon_io (2)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logos/favicon_io (2)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Permanent+Marker&family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <nav>
+        <a href="#" class="left">Prafful Raj</a>
+          <div class="right">
+            <ul>
+               <a href="#home"><li>HOME</li></a>
+                <a href="#about"><li>ABOUT</li></a>
+                <a href="#skills"><li>SKILLS</li></a>
+                <a href="#"><li>PROJECTS</li></a>
+                <a href="#contact"><li>CONTACT ME</li></a>
+            </ul>
+          </div>  
+      </nav>
+  </header>
+  <main>
+    <section class="FirstSection" id="home">
+      <div class="leftSection">Hello,I'm
+          <div class="name">PRAFFUL</div>
+              <span id="element"></span>
+              <a href="https://www.linkedin.com/in/praffulraj13" target="_blank"><div class="contact">Contact Me</div></a> 
+              <a href="#" target="_blank"><div class="github">Download CV</div></a>
+          </div>
+            
+            <div class="RightSection"><img src="./assets/logos/prafful.png" alt="This is Prafful Raj" style="margin: 0 80px;">
+            <div class="Home_button">
+                <a href="https://github.com/PraffulRajj" target="_blank" class="DownloadCV">Github</a>
+                <a href="https://www.linkedin.com/in/praffulraj13/" class="about" target="_blank">LinkedIn</a> 
+            </div>
+            <div class="Home_button1">
+                <a href="http://127.0.0.1:5501/About.html" target="_blank" class="LinkedIn">About</a>
+            </div>
+            
+      </section>
+      <br><br><br><br>
+
+      <section id="about" class="about-section">
+        <h2 class="section-heading">About Me</h2>
+            <div class="about-container">
+              <p>Hello! I'm <strong>Prafful Raj</strong>, a passionate and self-motivated full-stack web developer currently pursuing my B.Tech in Computer Science. I specialize in building responsive and user-friendly web applications using the <strong>MERN stack</strong> (MongoDB, Express, React, Node.js) and have a strong foundation in <strong>DSA (Data Structures & Algorithms)</strong> and <strong>Cloud Computing</strong>.
+              </p>
+              <p>I enjoy solving real-world problems, contributing to open source, and continuously learning new technologies. I'm currently focused on improving my DSA skills and expanding my cloud expertise with <strong>Azure</strong> and <strong>Google Cloud</strong> to become a versatile software engineer.
+              </p>
+              <p>My goal is to join a top-tier tech company as a Software Engineer, and I'm committed to leveling up every day to make that dream a reality.
+              </p>
+            </div>
+      </section>
+
+      <section class="skills-section" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML5</div>
+          <div class="skill-card">CSS3</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">React.js</div>
+          <div class="skill-card">Node.js</div>
+          <div class="skill-card">MongoDB</div>
+          <div class="skill-card">Express.js</div>
+          <div class="skill-card">Git & GitHub</div>
+          <div class="skill-card">Tailwind CSS</div>
+          <div class="skill-card">Java</div>
+          <div class="skill-card">Data Structures</div>
+          <div class="skill-card">Linux</div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2 class="section-heading">Contact Me</h2>
+        <p class="contact-subtext">Have a project, question, or opportunity? Let's connect!</p>
+
+        <form class="contact-form" action="https://formspree.io/f/xnnvypyd" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+  </main>
+
+    <footer class="footer">
+      <p>© 2025 Prafful Raj. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Desiner' , 'Front-End Developer'],
+      typeSpeed: 20,
+    });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.skill-card').forEach(el => {
+    el.classList.add('reveal');
+    observer.observe(el);
+  });
+document.querySelectorAll('.contact-section').forEach(el => {
+  el.classList.add('reveal');
+  observer.observe(el);
+});
+
+</script>
+</body>
+</html>
