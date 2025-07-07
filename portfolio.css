@@ -416,7 +416,7 @@ nav {
     grid-template-columns: 1fr;
   }
 
-  .DownloadCV, .about, .LinkedIn, .github{
+  .DownloadCV, .about, .LinkedIn{
     width: 100%;
   }
 }
@@ -461,7 +461,7 @@ nav {
     grid-template-columns: 1fr;
   }
 
-  .DownloadCV, .about, .LinkedIn, .github {
+  .DownloadCV, .about, .LinkedIn{
     width: 100%;
   }
 }
