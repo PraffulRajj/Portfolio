@@ -16,91 +16,152 @@
 }
 
 body{
-   overflow-x: hidden;
-   width: 100%;
-    animation: fadeInPage 0.8s ease-out both;
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+  overflow-x: hidden;
+  width: 100%;
+  animation: fadeInPage 0.8s ease-out both;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 section {
   background-color: var(--bg-color);
 }
 
-.left{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
+nav {
+  animation: slideDownNav 0.6s ease-out both;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 78px;
+  background-color: #0F172A;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
+              0 4px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
-
-nav{
-    animation: slideDownNav 0.6s ease-out both;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 78px;
-    background-color: #0F172A;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2),
-                0 4px 8px rgba(0,0,0,0.15);
+.left {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-
-nav ul{
-    display: flex;
-    justify-content: center;
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-
-nav ul li{
-    list-style: none;
-    margin: 0 20px;
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
 }
 
-nav ul a {
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.FirstSection{
+nav ul li a:hover {
+  color: #a6a6f7;
+  transform: scale(1.05);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
+  }
+
+  .right {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    background-color: #0F172A;
+    display: none;
+  }
+
+  .right ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .right.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDownNav {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+.FirstSection{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
 }
 
 
 .FirstSection > div{
-    width: 30%;
+  width: 30%;
 }
 
 
 .leftSection{
-    text-align: center;
-    font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
  
 }
 
 .RightSection{
-   margin: 10px;
+  margin: 10px;
 }
 
 
 .RightSection img{
-    transition: transform 0.4s ease;
-    width: 60%;
-    clip-path: circle(47.8% at 50% 48%);
-    
-
+  transition: transform 0.4s ease;
+  width: 60%;
+  clip-path: circle(47.8% at 50% 48%);
 }
 
 ul a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 ul a:hover{
-    font-size: 1.1rem;
-    color: rgb(166, 166, 247);
+  font-size: 1.1rem;
+  color: rgb(166, 166, 247);
 }
 
 .name{

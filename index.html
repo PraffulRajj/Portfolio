@@ -15,19 +15,27 @@
 </head>
 <body>
   <header>
-      <nav>
-        <a href="#" class="left">Prafful Raj</a>
-          <div class="right">
-            <ul>
-               <a href="#home"><li>HOME</li></a>
-                <a href="#about"><li>ABOUT</li></a>
-                <a href="#skills"><li>SKILLS</li></a>
-                <a href="#"><li>PROJECTS</li></a>
-                <a href="#contact"><li>CONTACT ME</li></a>
-            </ul>
-          </div>  
-      </nav>
-  </header>
+  <nav>
+    <a href="#" class="left">Prafful Raj</a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="right" id="nav-links">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
   <main>
     <section class="FirstSection" id="home">
       <div class="leftSection">Hello,I'm
@@ -137,6 +145,10 @@
       strings: ['Web Developer', 'Web Desiner' , 'Front-End Developer'],
       typeSpeed: 20,
     });
+    function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("active");
+  }
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
