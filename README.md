@@ -67,13 +67,10 @@ Open a Pull Request ✅
 ---
 
 📬 Connect with Me
-🔗 LinkedIn
 
-🐙 GitHub
-
-🌐 Portfolio Website
+🔗 LinkedIn - https://www.linkedin.com/in/praffulraj13/
 
 ---
 
-✨ Credits
+✨ Credits \n
 Built with ❤️ by Prafful Raj
