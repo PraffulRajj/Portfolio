@@ -29,7 +29,7 @@
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#Projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT ME</a></li>
       </ul>
     </div>
@@ -51,7 +51,7 @@
                 <a href="https://www.linkedin.com/in/praffulraj13/" class="about" target="_blank">LinkedIn</a> 
             </div>
             <div class="Home_button1">
-                <a href="#" target="_blank" class="LinkedIn">Projects</a>
+                <a href="#Projects" class="LinkedIn">Projects</a>
             </div>
             
       </section>
@@ -68,6 +68,9 @@
               </p>
             </div>
       </section>
+
+      <section class="Experience-section" id="Experience">
+        <h2 class="section-title">Experience</h2>
 
       <section class="skills-section" id="skills">
         <h2 class="section-title">My Skills</h2>
@@ -145,10 +148,12 @@
       strings: ['Web Developer', 'Web Desiner' , 'Front-End Developer'],
       typeSpeed: 20,
     });
+
     function toggleMenu() {
     const nav = document.getElementById("nav-links");
     nav.classList.toggle("active");
   }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
