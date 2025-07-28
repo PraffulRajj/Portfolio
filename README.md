@@ -72,5 +72,6 @@ Open a Pull Request ✅
 
 ---
 
-✨ Credits \n
+✨ Credits
+
 Built with ❤️ by Prafful Raj
