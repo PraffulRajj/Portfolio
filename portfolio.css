@@ -684,7 +684,7 @@ html {
 }
 
 .Experience-list {
-  display: flex;
+  display: grid;
   justify-content: space-around;
   grid-template-columns: 1fr;
   gap: 50px;
@@ -734,11 +734,5 @@ html {
 @media (min-width: 600px) {
   .Experience-list {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .Experience-list {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
