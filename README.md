@@ -2,7 +2,6 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/PraffulRajj/Portfolio?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PraffulRajj/Portfolio?style=flat-square)
-![Netlify Status](https://img.shields.io/netlify/your-netlify-deploy-id?style=flat-square) <!-- Optional: replace if needed -->
 
 A personal developer portfolio website built to showcase my projects, skills, resume, and contact information. Designed with clean UI, responsive layout, and smooth transitions to deliver a professional web presence.
 
@@ -31,17 +30,10 @@ A personal developer portfolio website built to showcase my projects, skills, re
 
 ---
 
-## 📷 Preview
-
-> *(Replace the below image with your portfolio screenshot or use a GitHub-hosted image link)*
-
-![Portfolio Screenshot](https://user-images.githubusercontent.com/your-username/your-image.png)
-
----
-
 ## 📁 Folder Structure
 
 /Portfolio
+
 │
 ├── index.html
 ├── /css
@@ -52,9 +44,13 @@ A personal developer portfolio website built to showcase my projects, skills, re
 │ └── images, icons, project previews
 └── README.md
 
-🚀 Deploy on Netlify
+---
 
-🤝 Contributing
+<h3>🚀 Deploy on Netlify</h3>
+
+---
+
+<h3>🤝 Contributing</h3>
 Contributions are welcome!
 If you'd like to improve this portfolio or add features:
 
@@ -68,12 +64,16 @@ Push to the branch (git push origin feature/your-feature)
 
 Open a Pull Request ✅
 
+---
+
 📬 Connect with Me
 🔗 LinkedIn
 
 🐙 GitHub
 
 🌐 Portfolio Website
+
+---
 
 ✨ Credits
 Built with ❤️ by Prafful Raj
